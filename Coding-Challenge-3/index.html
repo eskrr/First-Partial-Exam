@@ -21,13 +21,13 @@
                     <div id="content-tab1" class="active theJammerHome">
                         <div id="addComment">
                             <form id="formComment">
-                                <h3>Share your Jam:</h3>
+                                <h3 >Share your Jam:</h3>
                                 <label> 
                                     Your name goes here: 
-                                    <input type="text" class="userName" />
+                                    <input type="text" class="userNameField" />
                                 </label>
                                 <label>
-                                    <textarea id="userComment"></textarea>
+                                    <textarea id="userCommentField"></textarea>
                                 </label>
                                 <label>
                                     <input type=submit value="Add Comment" id="submit"\>
@@ -37,8 +37,7 @@
                         <h3 id="commentsTitle"> 
                             Hear the crowd!
                         </h3>
-                        <div class="seccionComments">
-
+                        <div id="seccionComments">
                         </div>
                     </div>
                 </div>
@@ -48,5 +47,32 @@
             </div>
         </div>
         <script src="./js/index.js"></script>
+        <template id="commentTemplate">
+            <div class="comment">
+                <section class="userCommentSection">
+                    <p class="userName"><i></i></p>
+                    <p class="userComment"></p>
+                </section>
+                <section class="deleteCommentSection">
+                    <button type="button" class="deleteButton">
+                        Delete
+                    </button>
+                </section>
+            </div>
+        </template>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,3 +2,50 @@ div{
   border: 1px solid black;
   padding: 5px;
 }
+
+.side-box{
+	padding: 20px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+	.heading, .content {
+		display: none;
+	}
+	.navigation {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/* Tablets */
+@media only screen and (min-width: 401px) and (max-width: 799px) {
+	.heading {
+		display: none;
+	}
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.content, .main {
+		display: flex;
+		flex-direction: row;
+	}
+
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 800px) {
+	.heading, .navigation {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.content, .main {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+
